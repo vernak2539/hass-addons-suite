@@ -1,5 +1,5 @@
 name: Prometheus Node Exporter
-version: 2025.11.3
+version: 2025.11.4
 slug: racksync-node-exporter
 description: Expose hardware and OS metrics for Prometheus monitoring. Collects system statistics like CPU, memory, disk, and network usage from your Home Assistant host.
 # Updated with improved security, configurable collectors, and monorepo integration
@@ -24,6 +24,7 @@ boot: auto
 host_network: true
 apparmor: true
 host_pid: true
+host_uts: true
 homeassistant: "2023.8.1"
 advanced: true
 stage: stable
